@@ -20,20 +20,17 @@ body {
   background-color: #f2f4f8;
   color: #222;
 }
-h2 {
-  margin-top: 20px;
-  color: inherit;
-}
+
 .dark {
   background-color: #121212;
   color: white;
 }
 
 .profile-card {
-  width: 350px;
+  width: 380px;
   text-align: center;
-  padding: 25px;
-  border-radius: 20px;
+  padding: 30px 25px;
+  border-radius: 24px;
   background-color: white;
   color: #222;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
@@ -51,25 +48,39 @@ h2 {
 }
 
 .avatar {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #4f46e5;
+  margin-bottom: 18px;
 }
 
 h1 {
-  margin: 15px 0 10px;
+  margin: 0 0 18px;
+  font-size: 32px;
+  line-height: 1.2;
   color: #4f46e5;
+  font-weight: 700;
+  word-break: normal;
+  white-space: normal;
 }
 
 h2 {
   margin-top: 20px;
+  color: inherit;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 15px 0;
 }
 
 li {
@@ -85,8 +96,10 @@ li {
 
 .status {
   display: inline-block;
-  padding: 8px 18px;
-  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -112,7 +125,7 @@ li {
 }
 
 button {
-  padding: 10px;
+  padding: 11px;
   border: none;
   border-radius: 10px;
   background-color: #4f46e5;
@@ -130,5 +143,9 @@ button:hover {
 @media (max-width: 480px) {
   .profile-card {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
   }
 }
