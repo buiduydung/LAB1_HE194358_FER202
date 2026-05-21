@@ -70,7 +70,7 @@ function App() {
             Switch to {isDarkMode ? "Light Mode" : "Dark Mode"}
           </button>
 
-          <button onClick={increaseLike}>Like 👍</button>
+          <button onClick={increaseLike}>Like</button>
         </div>
       </div>
     </div>
