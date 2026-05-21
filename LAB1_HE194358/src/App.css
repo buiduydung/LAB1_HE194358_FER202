@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .light {
@@ -33,18 +33,25 @@ body {
   border-radius: 24px;
   background-color: white;
   color: #222;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
 }
 
 .dark .profile-card {
   background-color: #1f1f1f;
   color: white;
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 35px rgba(255, 255, 255, 0.12);
 }
 
-.profile-card:hover {
-  transform: translateY(-8px);
+.dark .profile-card:hover {
+  box-shadow: 0 18px 45px rgba(255, 255, 255, 0.18);
 }
 
 .avatar {
@@ -86,12 +93,32 @@ ul {
 li {
   background-color: #eef2ff;
   margin: 8px 0;
-  padding: 8px;
+  padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+li:hover {
+  background-color: #4f46e5;
+  color: white;
+  transform: translateX(8px) scale(1.03);
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.35);
 }
 
 .dark li {
   background-color: #333;
+  color: white;
+}
+
+.dark li:hover {
+  background-color: #6366f1;
+  color: white;
+  box-shadow: 0 8px 18px rgba(99, 102, 241, 0.35);
 }
 
 .status {
@@ -132,7 +159,9 @@ button {
   color: white;
   font-size: 15px;
   cursor: pointer;
-  transition: 0.2s;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 button:hover {
@@ -147,5 +176,13 @@ button:hover {
 
   h1 {
     font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .status {
+    font-size: 18px;
   }
 }
