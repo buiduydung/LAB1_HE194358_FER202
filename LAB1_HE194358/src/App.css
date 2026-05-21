@@ -20,7 +20,10 @@ body {
   background-color: #f2f4f8;
   color: #222;
 }
-
+h2 {
+  margin-top: 20px;
+  color: inherit;
+}
 .dark {
   background-color: #121212;
   color: white;
